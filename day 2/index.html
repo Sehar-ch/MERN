@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Records — Day 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>Student Records</h1>
+    <p class="subtitle">Day 2 — JavaScript Arrays, Objects &amp; DOM</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Add Student Form -->
+    <section class="panel">
+      <h2>Add a Student</h2>
+      <form id="student-form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" required placeholder="e.g. Ayesha Khan">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" required placeholder="e.g. ayesha@email.com">
+        </div>
+        <div class="field">
+          <label for="course">Course</label>
+          <input type="text" id="course" required placeholder="e.g. MERN Stack">
+        </div>
+        <div class="field">
+          <label for="marks">Marks</label>
+          <input type="number" id="marks" min="0" max="100" required placeholder="e.g. 85">
+        </div>
+        <button type="submit" id="add-btn">Add Student</button>
+      </form>
+    </section>
+
+    <!-- Controls: Search + Filter -->
+    <section class="panel controls">
+      <div class="field">
+        <label for="search-input">Search by Name</label>
+        <input type="text" id="search-input" placeholder="Type a name...">
+      </div>
+      <div class="field">
+        <label for="filter-select">Filter by Marks</label>
+        <select id="filter-select">
+          <option value="all">All Students</option>
+          <option value="pass">Pass (Marks &ge; 50)</option>
+          <option value="fail">Fail (Marks &lt; 50)</option>
+          <option value="distinction">Distinction (Marks &ge; 80)</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Student List -->
+    <section class="panel">
+      <div class="list-header">
+        <h2>Student List</h2>
+        <span id="student-count" class="count-badge">0 students</span>
+      </div>
+      <div id="student-list" class="student-list">
+        <!-- Student cards injected here by JavaScript -->
+      </div>
+      <p id="empty-message" class="empty-message" style="display:none;">No students found.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Built for Day 2 — HisabDo MERN Internship</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
