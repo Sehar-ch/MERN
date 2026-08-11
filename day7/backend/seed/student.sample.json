@@ -1,0 +1,8 @@
+[
+  { "name": "Sehar", "email": "sehar@email.com", "course": "MERN Stack", "marks": 88 },
+  { "name": "Mobeen", "email": "mobeen@email.com", "course": "MERN Stack", "marks": 42 },
+  { "name": "Rehan", "email": "rehan@email.com", "course": "Frontend Dev", "marks": 67 },
+  { "name": "Humail", "email": "humail@email.com", "course": "Backend Dev", "marks": 91 },
+  { "name": "Haim", "email": "haim@email.com", "course": "MERN Stack", "marks": 76 },
+  { "name": "Haram", "email": "haram@email.com", "course": "Frontend Dev", "marks": 38 }
+]
